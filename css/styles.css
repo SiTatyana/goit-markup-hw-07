@@ -70,20 +70,8 @@ img {
   margin-right: auto;
 }
 
-.overlay {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/Hero/Overlay.jpg);
-
-  background-size: cover;
-}
-
 .header-container {
   display: flex;
-}
-
-/* Бордер нижний портфолио */
-.portfolio {
-  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -232,6 +220,13 @@ img {
   background-color: #2f303a;
 }
 
+.overlay {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Hero/Overlay.jpg);
+
+  background-size: cover;
+}
+
 .hero-title {
   margin-bottom: 30px;
 
@@ -244,7 +239,7 @@ img {
   color: var(--nav-bg-clr);
 }
 
-.hero-btn {
+.hero-button {
   padding: 10px 32px;
   border: none;
 
@@ -763,6 +758,11 @@ input [type="checkbox"] {
 
 
 /* Portfolio */
+
+/* Бордер нижний портфолио */
+.portfolio {
+  border-bottom: 1px solid #ececec;
+}
 
 .btn-list {
   display: flex;
