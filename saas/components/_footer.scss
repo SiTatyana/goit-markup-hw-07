@@ -4,9 +4,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--footer-bg-clr);
-}
 
-.footer-link {
+&-link {
     display: block;
     margin-bottom: 20px;
     font-family: var(--secondary-font);
@@ -19,7 +18,7 @@
     color: var(--nav-bg-clr);
 }
 
-.footer-span {
+&-span {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -29,11 +28,11 @@
     color: var(--accent-clr);
 }
 
-.footer-item {
+&-item {
     margin-bottom: 9px;
 }
 
-.footer-adr {
+&-adr {
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
@@ -47,7 +46,7 @@
     transition: color var(--animation);
 }
 
-.footer-contacts {
+&-contacts {
     font-family: inherit;
     font-style: normal;
     font-weight: normal;
@@ -61,20 +60,20 @@
     transition: color var(--animation);
 }
 
-.footer-container {
+&-container {
     display: flex;
     align-items: baseline;
 }
 
-.footer-wrapper {
+&-wrapper {
     flex-grow: 1;
 }
 
-.footer-cta {
+&-cta {
     margin-left: 70px;
 }
 
-.footer-cta-title {
+&-cta-title {
     margin-bottom: 20px;
 
     font-family: inherit;
@@ -85,15 +84,15 @@
     color: var(--nav-bg-clr);
 }
 
-.footer-socials-item {
+&-socials-item {
     margin-right: 10px;
 }
 
-.footer-socials-item:last-child {
+&-socials-item:last-child {
     margin-right: 0;
 }
 
-.footer-socials-link {
+&-socials-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,22 +108,22 @@
     transition: background-color var(--animation);
 }
 
-.footer-socials-link:hover,
-.footer-socials-link:focus {
+&-socials-link:hover,
+&-socials-link:focus {
     fill: var(--nav-bg-clr);
     background-color: var(--accent-clr);
 }
 
-.footer-subscribe {
+&-subscribe {
     margin-left: 93px;
 }
 
-.footer-label {
+&-label {
     display: inline-block;
     margin-right: 12px;
 }
 
-.footer-input {
+&-input {
     padding: 15px 16px;
     ;
     width: 358px;
@@ -135,7 +134,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.footer-button {
+&-button {
     padding-left: 29px;
     width: 200px;
     height: 50px;
@@ -159,4 +158,13 @@
 
     border: none;
     border-radius: 4px;
+}
+
+&-contacts:hover,
+&-contacts:focus,
+&-adr:hover,
+&-adr:focus {
+    color: var(--accent-clr);
+    fill: var(--accent-clr);
+}
 }

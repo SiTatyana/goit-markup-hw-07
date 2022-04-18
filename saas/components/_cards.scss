@@ -1,18 +1,14 @@
-.cards-list {
+.cards {
     display: flex;
     flex-wrap: wrap;
-}
 
-.cards-item {
+
+&-item {
     margin-right: 30px;
     margin-bottom: 30px;
 }
 
-.third {
-    margin-right: 0;
-}
-
-.cards-link {
+&-link {
     display: block;
 
     text-decoration: none;
@@ -20,21 +16,20 @@
     transition: box-shadow var(--animation);
 }
 
-.cards-link:hover,
-.cards-link:focus {
+&-link:hover,
+&-link:focus {
     box-sizing: border-box;
 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.cards-link:hover .cards-thumb::before,
-.cards-link:focus .cards-thumb::before {
-    transform: translateY(0);
-    opacity: 1;
+&-thumb {
+    position: relative;
+    overflow: hidden;
 }
 
-.cards-thumb::before {
+&-thumb::before {
     position: absolute;
 
     content: '';
@@ -47,12 +42,13 @@
     transition: var(--animation);
 }
 
-.cards-thumb {
-    position: relative;
-    overflow: hidden;
+&-link:hover &-thumb::before,
+&-link:focus &-thumb::before {
+    transform: translateY(0);
+    opacity: 1;
 }
 
-.cards-pop-up {
+&-pop-up {
     position: absolute;
     top: 63px;
     left: 24px;
@@ -61,7 +57,7 @@
     transition: var(--animation);
 }
 
-.cards-pop-up-text {
+&-pop-up-text {
     font-family: inherit;
     font-size: 18px;
     font-weight: 400;
@@ -70,20 +66,20 @@
     color: rgba(255, 255, 255, 1);
 }
 
-.cards-link:hover .cards-pop-up,
-.cards-link:focus .cards-pop-up {
+&-link:hover &-pop-up,
+&-link:focus &-pop-up {
     opacity: 1;
     transform: translateY(0);
 }
 
-.cards-indent {
+&-indent {
     padding: 20px 24px;
     border-bottom: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
 }
 
-.cards-title {
+&-title {
     margin-bottom: 4px;
     font-family: inherit;
     text-decoration: none;
@@ -95,11 +91,15 @@
     color: var(--secondary-txt-clr);
 }
 
-.cards-post {
+&-post {
     font-family: inherit;
     text-decoration: none;
     font-size: 16px;
     line-height: 1.87;
 
     color: var(--main-txt-clr);
+}
+}
+.third {
+    margin-right: 0;
 }

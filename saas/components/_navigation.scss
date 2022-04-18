@@ -1,8 +1,8 @@
 .nav {
     background-color: var(--nav-bg-clr);
-}
 
-.nav-link {
+
+    &-link {
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
 
-.nav-span {
+    &-span {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -29,20 +29,20 @@
     color: var(--accent-clr);
 }
 
-.nav-list {
+    &-list {
     display: flex;
     align-items: center;
 }
 
-.nav-item {
+    &-item {
     margin-right: 50px;
 }
 
-.nav-item:last-child {
+    &-item:last-child {
     margin-right: 0;
 }
 
-.nav-links {
+    &-links {
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -58,11 +58,23 @@
     transition: color var(--animation);
 }
 
-.current {
+    &-links:hover,
+    &-links:focus {
+    color: var(--accent-clr);
+    fill: var(--accent-clr);
+}
+
+    &-item.active a {
     color: var(--accent-clr);
 }
 
-.current::after {
+}
+
+.current {
+    color: var(--accent-clr);
+
+
+    &::after {
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -72,4 +84,6 @@
     height: 4px;
     border-radius: 2px;
     background-color: var(--accent-clr);
+}
+
 }

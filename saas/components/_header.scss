@@ -1,19 +1,23 @@
-.header-list {
+.header{
+    display: flex;
+
+
+    &-list {
     display: flex;
     margin-left: auto;
     align-items: center;
 }
 
-.header-item {
+    &-item {
     display: flex;
     margin-right: 30px;
 }
 
-.header-item:last-child {
+    &-item:last-child {
     margin-right: 0;
 }
 
-.header-contacts {
+    &-contacts {
     display: flex;
     align-items: center;
 
@@ -30,29 +34,16 @@
     transition: color var(--animation);
 }
 
-.header-socials-icon {
+    &-socials-icon {
     margin-right: 10px;
     fill: currentColor;
 
     transition: fill var(--animation);
 }
 
-.header-contacts:hover,
-.header-contacts:focus {
+    &-contacts:hover,
+    &-contacts:focus {
     color: var(--accent-clr);
 }
 
-/* .header-contacts:hover, - ховер свг через наследование цвета*/
-.footer-contacts:hover,
-.footer-contacts:focus,
-.footer-adr:hover,
-.footer-adr:focus,
-.nav-links:hover,
-.nav-links:focus {
-    color: var(--accent-clr);
-    fill: var(--accent-clr);
-}
-
-.nav-item.active a {
-    color: var(--accent-clr);
 }
