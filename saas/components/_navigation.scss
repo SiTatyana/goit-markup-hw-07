@@ -2,7 +2,7 @@
     background-color: var(--nav-bg-clr);
 
 
-    &-link {
+    &__link {
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
 
-    &-span {
+    &__span {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -29,20 +29,20 @@
     color: var(--accent-clr);
 }
 
-    &-list {
+    &__list {
     display: flex;
     align-items: center;
 }
 
-    &-item {
+    &__item {
     margin-right: 50px;
 }
 
-    &-item:last-child {
+    &__item:last-child {
     margin-right: 0;
 }
 
-    &-links {
+    &__links {
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -58,13 +58,13 @@
     transition: color var(--animation);
 }
 
-    &-links:hover,
-    &-links:focus {
+    &__links:hover,
+    &__links:focus {
     color: var(--accent-clr);
     fill: var(--accent-clr);
 }
 
-    &-item.active a {
+    &__item.active a {
     color: var(--accent-clr);
 }
 
