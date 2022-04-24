@@ -75,6 +75,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    justify-content: center;
 }
 
 &-link {
@@ -149,6 +150,9 @@ fill: var(--accent-clr);
 
 }
 
+.last{
+   margin-bottom: 0; 
+}
 
 .last textarea {
     padding: 12px 16px;

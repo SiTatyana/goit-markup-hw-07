@@ -291,6 +291,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  justify-content: center;
 }
 
 .modal-link {
@@ -355,6 +356,10 @@ body {
 .modal-form-field label {
   margin-bottom: 4px;
   margin: 0;
+}
+
+.last {
+  margin-bottom: 0;
 }
 
 .last textarea {
