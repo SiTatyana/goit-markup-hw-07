@@ -422,7 +422,7 @@ img {
   
   padding: 3px;
   background-color: var(--accent-clr);
-  background-image: url(../images/icons/icon\ check.svg);
+  background-image: url(../images/icons/check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-clr);
@@ -1064,7 +1064,7 @@ input [type="checkbox"] {
   background-color: var(--accent-clr);
   border-color: var(--accent-clr);
 
-  background-image: url(../images/icons/icon\ send.svg);
+  background-image: url(../images/icons/send.svg);
   background-repeat: no-repeat;
   background-position-x: 148px;
   background-position-y: 13px;
